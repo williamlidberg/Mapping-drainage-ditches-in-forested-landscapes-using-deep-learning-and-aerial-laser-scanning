@@ -9,3 +9,5 @@ and 1607 km of manually mapped ditch channels spread across Sweden. The model
 proved to be accurate when evaluated on other heavily ditched countries in the Baltic
 Sea Region. Further, these results provides a significant contribution to the
 assessment of regional hydrology and ecosystem dynamics in forested landscapes.
+
+![alt text](https://github.com/[williamlidberg]/[Mapping-drainage-ditches-in-forested-landscapes-using-deep-learning-and-aerial-laser-scannlidar-data]/blob/[branch]/XceptionUnet.png?raw=true)
