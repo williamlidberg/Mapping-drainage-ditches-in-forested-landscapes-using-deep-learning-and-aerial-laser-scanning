@@ -11,3 +11,9 @@ Sea Region. Further, these results provides a significant contribution to the
 assessment of regional hydrology and ecosystem dynamics in forested landscapes.
 
 ![alt text](XceptionUnet.png)
+
+# Build docker image
+docker build --no-cache -t crfasrnn-gpu:latest .
+
+# run image
+nvidia-docker run -v /home/azureuser/cloudfiles/code/Users/:/mnt/ -it crfasrnn-gpu:latest bash
