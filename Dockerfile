@@ -1,11 +1,3 @@
-# Bygg image
-docker build --no-cache -t crfasrnn-gpu:latest .
-
-# Kör image
-nvidia-docker run -v /home/azureuser/cloudfiles/code/Users/:/mnt/ -it crfasrnn-gpu:latest bash
-
-# Dockerfile
-# Use a specific version from https://mcr.microsoft.com/v2/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04/tags/list
 FROM mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04:20210615.v1
 #FROM mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04
 RUN echo "Custom container downloaded!"
