@@ -22,7 +22,7 @@ RUN conda install -c anaconda pandas
 RUN conda install -c conda-forge scikit-learn
 RUN conda install -c conda-forge imagecodecs
 
-ENV PYTHONPATH="/bin/crfasrnn_keras-master/src:$PYTHONPATH"
+ENV PYTHONPATH="/bin/utils/crfasrnn_keras-master/src:$PYTHONPATH"
 ENV LD_LIBRARY_PATH="/usr/local/cuda-10.1/targets/x86_64-linux/lib:/opt/miniconda/lib/python3.7/site-packages/tensorflow_core:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
 ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
 ENV C_INCLUDE_PATH=/usr/include/gdal
