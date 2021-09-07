@@ -3,6 +3,8 @@ FROM mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04:20210615
 RUN echo "Custom container downloaded!"
 RUN apt-get -y update --fix-missing
 RUN apt-get -y install libopencv-highgui-dev ffmpeg libsm6 libxext6 software-properties-common
+COPY . /app
+RUN echo "files copied to container"
 
 # Install dependencis for gdal
 RUN add-apt-repository -y ppa:ubuntugis/ppa
