@@ -1,4 +1,0 @@
-tensorflow
-keras
-h5py
-Pillow
