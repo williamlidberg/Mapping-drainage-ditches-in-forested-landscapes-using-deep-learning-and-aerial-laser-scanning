@@ -24,6 +24,8 @@ After encoding the HPMF image into a spatially more compact representation, it i
 ## Results and discussion
 Mapping drainage ditches is an important first step in finding effective landscape and hydrology management strategies. We showed that semantic image segmentation with deep learning from high-resolution ALS data can be used to detect previously unmapped drainage ditches in forested landscapes in the Baltic Sea Region with a recall of 84 % and an MCC of 0.72. This novel technique only requires one topographical index, which makes it possible to implement on large scales with limited computational resources. Our method performs better on most of the metrics than previous ditch detection studies – and at least equally well on all others, despite a more varied and challenging landscape in our test data is dominated by forests. Visual inspection indicated that this method also 
 
+![alt text](DitchResult.jpg)
+
 ## References
 Audet, J., Wallin, M.B., Kyllmar, K., Andersson, S., Bishop, K., 2017. Nitrous oxide emissions from streams in a Swedish agricultural catchment. Agric. Ecosyst. Environ. 236, 295–303. https://doi.org/10.1016/j.agee.2016.12.012
 
