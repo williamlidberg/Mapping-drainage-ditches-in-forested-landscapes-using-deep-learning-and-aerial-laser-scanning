@@ -1,7 +1,7 @@
 [![docs](https://img.shields.io/badge/whitebox-docs-brightgreen.svg)](https://www.whiteboxgeo.com/manual/wbt_book/preface.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Twitter Follow](https://img.shields.io/twitter/follow/William_Lidberg?style=social)](https://twitter.com/william_lidberg)
-[![docker image](https://img.shields.io/docker/pulls/mashape/kong.svg)
+[![docker image](https://img.shields.io/docker/pulls/williamlidberg/ditchnet.svg)]
 
 # Mapping drainage ditches in forested landscapes using deep learning and aerial laser scanning
 This project aims to map small ditches from high resolution LiDAR data using deep learning
