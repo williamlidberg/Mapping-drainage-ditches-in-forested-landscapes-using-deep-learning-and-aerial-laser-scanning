@@ -9,7 +9,7 @@ This project aims to map small ditches from high resolution LiDAR data using dee
 
 A deep neural network was trained on airborne laser scanning data and 1607 km of manually digitized ditch channels from 10 regions spread across Sweden. The model correctly mapped 82 % of all ditch channels in the test data with a Matthew's correlation coefficient of 0.72. Visual inspection indicates that this method often also classifies natural stream channels as ditches, suggesting that deep neural networks can be trained to detect such channels in addition to drainage ditches. This technique only requires one topographical index, which made it possible to implement on national scale. The model was applied to Sweden and the resulting ditch map is avalaible from the swedish forest agancy: https://www.skogsstyrelsen.se/sjalvservice/karttjanster/geodatatjanster/ftp/
 
-Use this dockerimage for training and inference: https://hub.docker.com/repository/docker/williamlidberg/ditchnet
+Use this docker image for training and inference: https://hub.docker.com/repository/docker/williamlidberg/ditchnet
 
 
 ## Training dataset  
