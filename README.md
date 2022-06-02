@@ -10,6 +10,8 @@ Extensive use of drainage ditches in European boreal forests and in some parts o
 
 Authors: William Lidberg, Siddhartho Shekhar Paul, Florian Westphal, Kai Florian Richter, Niklas Lavesson, Raitis Melniks, Janis Ivanovs, Mariusz Ciesielski, Antti Leinonen, Anneli M. Ågren 
 
+Use this docker image for training and inference: https://hub.docker.com/repository/docker/williamlidberg/ditchnet
+
 ## Method
 We trained a deep neural network on high-density ALS data and manually digitized ditches from 10 regions across Sweden. 20 % of the data was set aside for testing the final model. In addition to this testing data, the model was also applied to four additional test areas spread across Sweden, Finland, Latvia, and Poland (Figure 1A).
 
