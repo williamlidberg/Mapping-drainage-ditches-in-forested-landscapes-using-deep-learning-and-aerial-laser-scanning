@@ -128,9 +128,10 @@ Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D., Huang
 Ågren, A.M., Paul, Shekhar, S., Lidberg, W. (2021), “Mapped drainage ditches in forested landscapes”, Mendeley Data: https://data.mendeley.com/datasets/zxkg43jsx8/draft?a=626084b8-5664-425a-80a7-8f143370fb62, V1, doi reserved but not active: 10.17632/zxkg43jsx8.1
 
 
-## Docker container
-Build docker image
-docker build --no-cache -t crfasrnn-gpu:latest .
+## Licensing
 
-run image
-nvidia-docker run -v /home/azureuser/cloudfiles/code/Users/:/mnt/ -it crfasrnn-gpu:latest bash
+One really important part: Give your project a proper license. Here you should
+state what the license is and how to find the text version of the license.
+Something like:
+
+"The code in this project is licensed under MIT license."
