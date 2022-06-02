@@ -34,6 +34,10 @@ Mapping drainage ditches is an important first step in finding effective landsca
 
 ![alt text](DitchResult.jpg)
 
+## Contributing
+"If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests are warmly welcome."
+
 ## References
 Audet, J., Wallin, M.B., Kyllmar, K., Andersson, S., Bishop, K., 2017. Nitrous oxide emissions from streams in a Swedish agricultural catchment. Agric. Ecosyst. Environ. 236, 295–303. https://doi.org/10.1016/j.agee.2016.12.012
 
