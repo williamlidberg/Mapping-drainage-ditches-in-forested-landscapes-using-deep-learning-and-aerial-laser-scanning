@@ -1,8 +1,15 @@
+[![docs](https://img.shields.io/badge/whitebox-docs-brightgreen.svg)](https://www.whiteboxgeo.com/manual/wbt_book/preface.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![docker image](https://img.shields.io/docker/pulls/williamlidberg/ditchnet.svg)](https://hub.docker.com/repository/docker/williamlidberg/ditchnet)
+[![Twitter Follow](https://img.shields.io/twitter/follow/William_Lidberg?style=social)](https://twitter.com/william_lidberg)
+
+
 # Mapping drainage ditches in forested landscapes using deep learning and aerial laser scanning
 This project aims to map small ditches from high resolution LiDAR data using deep learning
 
 A deep neural network was trained on airborne laser scanning data and 1607 km of manually digitized ditch channels from 10 regions spread across Sweden. The model correctly mapped 82 % of all ditch channels in the test data with a Matthew's correlation coefficient of 0.72. Visual inspection indicates that this method often also classifies natural stream channels as ditches, suggesting that deep neural networks can be trained to detect such channels in addition to drainage ditches. This technique only requires one topographical index, which made it possible to implement on national scale. The model was applied to Sweden and the resulting ditch map is avalaible from the swedish forest agancy: https://www.skogsstyrelsen.se/sjalvservice/karttjanster/geodatatjanster/ftp/
 
+Use this docker image for training and inference: https://hub.docker.com/repository/docker/williamlidberg/ditchnet
 
 
 ## Training dataset  
@@ -26,6 +33,10 @@ After encoding the HPMF image into a spatially more compact representation, it i
 Mapping drainage ditches is an important first step in finding effective landscape and hydrology management strategies. We showed that semantic image segmentation with deep learning from high-resolution ALS data can be used to detect previously unmapped drainage ditches in forested landscapes in the Baltic Sea Region with a recall of 84 % and an MCC of 0.72. This novel technique only requires one topographical index, which makes it possible to implement on large scales with limited computational resources. Our method performs better on most of the metrics than previous ditch detection studies – and at least equally well on all others, despite a more varied and challenging landscape in our test data is dominated by forests. Visual inspection indicated that this method also 
 
 ![alt text](DitchResult.jpg)
+
+## Contributing
+"If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests are warmly welcome."
 
 ## References
 Audet, J., Wallin, M.B., Kyllmar, K., Andersson, S., Bishop, K., 2017. Nitrous oxide emissions from streams in a Swedish agricultural catchment. Agric. Ecosyst. Environ. 236, 295–303. https://doi.org/10.1016/j.agee.2016.12.012
@@ -121,9 +132,10 @@ Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D., Huang
 Ågren, A.M., Paul, Shekhar, S., Lidberg, W. (2021), “Mapped drainage ditches in forested landscapes”, Mendeley Data: https://data.mendeley.com/datasets/zxkg43jsx8/draft?a=626084b8-5664-425a-80a7-8f143370fb62, V1, doi reserved but not active: 10.17632/zxkg43jsx8.1
 
 
-## Docker container
-Build docker image
-docker build --no-cache -t crfasrnn-gpu:latest .
+## Licensing
 
-run image
-nvidia-docker run -v /home/azureuser/cloudfiles/code/Users/:/mnt/ -it crfasrnn-gpu:latest bash
+One really important part: Give your project a proper license. Here you should
+state what the license is and how to find the text version of the license.
+Something like:
+
+"The code in this project is licensed under MIT license."
