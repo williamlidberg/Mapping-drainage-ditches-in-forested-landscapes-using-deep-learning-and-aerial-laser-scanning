@@ -50,7 +50,11 @@ WORKDIR /workspace/code
 
 # set up environment variables
 # this python path points to the CPU version of the CRF layer
-ENV PYTHONPATH="/workspace/code/utils/crfasrnn_keras-master/src:${PYTHONPATH}"
+#ENV PYTHONPATH="/workspace/code/utils/crfasrnn_keras-master/src:${PYTHONPATH}"
+ENV PYTHONPATH="/workspace/code/utils/crfasrnn_keras-gpu_support/src:${PYTHONPATH}"
 ENV LD_LIBRARY_PATH="/usr/local/lib/python3.8/dist-packages/tensorflow_core/:${LD_LIBRARY_PATH}"
 ENV export CPLUS_INCLUDE_PATH=/usr/include/gdal
 ENV export C_INCLUDE_PATH=/usr/include/gdal
+
+COPY .  /workspace/model
+RUN echo "files copied to container"
