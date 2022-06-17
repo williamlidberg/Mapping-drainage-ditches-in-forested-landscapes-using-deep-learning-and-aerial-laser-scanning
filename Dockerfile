@@ -4,7 +4,7 @@ RUN echo "Custom container downloaded!"
 
 RUN apt-get -y update --fix-missing
 RUN apt-get -y install libopencv-highgui-dev ffmpeg libsm6 libxext6 software-properties-common
-
+RUN echo "Done installing conda packages in container!"
 # setup files
 RUN mkdir /workspace/data
 RUN mkdir /workspace/code
