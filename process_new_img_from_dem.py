@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import tifffile
-from yaml import parse
+#from yaml import parse
 from osgeo import gdal
 import utils.unet
 import utils.WriteGeotiff
@@ -112,8 +112,6 @@ def unpatchify(shape, patches, tile_size, margin):
 
     return img
 
-# docker run -it -v /mnt/Extension_100TB/temp/dem1m:/workspace/data -v /mnt/Extension_100TB/william/GitHub/Mapping-drainage-ditches-in-forested-landscapes-using-deep-learning-and-aerial-laser-scanning:/workspace/code -v /mnt/ramdisk:/workspace/temp ditchnet:latest
-# python /workspace/code/process_new_img_from_dem.py /workspace/data/ /workspace/data/output /workspace/temp/
 def main(input_path, model_path, out_path_binary, temp_dir, img_type, tile_size, margin,
          threshold, wo_crf):
 
@@ -209,7 +207,7 @@ if __name__ == '__main__':
     parser.add_argument('input_path', help='Path to image or folder')
     parser.add_argument('out_path_binary', help='Path to output binary folder')
     parser.add_argument('temp_dir', help= 'temp_dir')
-    parser.add_argument('--model_path', help='Path to trained model', default='/workspace/code/model_1m.h5')
+    parser.add_argument('--model_path', help='Path to trained model', default='/workspace/code/DitchNet_1m.h5')
     parser.add_argument('--img_type', help='Output image file ending',
                         default='tif')
     parser.add_argument('--tile_size', help='Tile size', type=int,
