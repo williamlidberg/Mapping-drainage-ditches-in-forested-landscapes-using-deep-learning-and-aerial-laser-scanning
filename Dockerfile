@@ -56,5 +56,12 @@ ENV LD_LIBRARY_PATH="/usr/local/lib/python3.8/dist-packages/tensorflow_core/:${L
 ENV export CPLUS_INCLUDE_PATH=/usr/include/gdal
 ENV export C_INCLUDE_PATH=/usr/include/gdal
 
-COPY .  /workspace/model
+
+RUN mkdir /min/
+RUN mkdir /min/input
+RUN mkdir /min/output
+RUN mkdir /min/modell/
+RUN mkdir /min/temp_dir/
+COPY .  /min/modell/
+WORKDIR /min/modell/
 RUN echo "files copied to container"
