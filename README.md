@@ -11,7 +11,7 @@ A deep neural network was trained on airborne laser scanning data and 1607 km of
 
 Use this docker image for training and inference: https://hub.docker.com/repository/docker/williamlidberg/ditchnet
 
-use this webb app to test the model on your own data: https://ditchnet.phloem.se/
+use this Web App to test the model on your own data: https://ditchnet.phloem.se/
 
 ## Training dataset  
 The 10 digitized regions were dominated by forest and were selected to achieve a broad representation of different landscape properties concerning topography, soil conditions, runoff, land-use and tree species. A compact laser-based system (Leica ALS80-HP-8236) was used to collect the ALS data from an aircraft flying at 2888 -3000 m. The ALS point clouds had a last and only return density of 1-2 points sqm and were divided into 55 tiles with a size of 2.5 x 2.5 km each. Combined, the tiles cover an area of 344 km2. DEMs with 1 m resolution were created from the ALS point clouds using a tin gridding approach implemented in Whitebox tools 1.4.0 (Lindsay, 2018). A high pass median filter (HPMF) was applied to the DEMs to emphasize short-range variability in the topography. The HPMF-algorithm was implemented in Whitebox tools (Lindsay, 2018) and operates by subtracting the value at the grid cell at the center of the window from the median value in the surrounding neighborhood with a kernel of 5 cells. Negative values indicate depressions while positive values indicate ridges.
