@@ -29,4 +29,4 @@ Test inference
 
 
 
-
+The full documentation of the Webb App is avalible here:https://github.com/froglich/ditchnet-web
